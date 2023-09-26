@@ -1,0 +1,44 @@
+p {
+    color: blue;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.header {
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-decoration: underline;
+}
+
+
+nav .btn{
+    text-shadow: 2px 2px 2px black;
+}
+
+nav>.btn{
+    color: red;
+}
+
+a {
+    color: orange;
+}
+
+a:link{
+    color:green;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    color:brown;
+}
+
+a:active {
+    color: yellow;
+}
