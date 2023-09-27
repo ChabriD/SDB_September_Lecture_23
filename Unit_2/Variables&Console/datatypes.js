@@ -18,7 +18,7 @@ console.log(on, off);
         No value is assigned and does not act like an empty container.
  */
 
-let undef = undefined; // instead of assigning our undef variable a datatype of undefined, we can simply just declare the varaible.
+let undef = undefined; // instead of assigning our undef variable a datatype of undefined, we can simply just declare the variable.
 console.log(undef); // undefined
 
 let correct; // write like this instead
@@ -43,3 +43,104 @@ console.log(notQuite); // 0.30000000000000004// JS rounds out at a certain numbe
 
 let numbersAreHard = (0.2 * 10 + 0.1 * 10) / 10; // we can still do math with JS, though
 console.log(numbersAreHard); // 0.3
+
+/* String
+    - data types to represent text.
+    - wrapped in single or double quotes
+ */
+
+let stringOne = "double quotes";
+const stringTwo = 'single quotes';
+
+console.log(stringOne, stringTwo);
+
+// NUmbers vs Strings
+let first = 1234 + 567;
+let second = '1234' + '567';
+
+console.log(first)
+console.log(second)
+
+//
+console.log(typeof first);
+console.log(typeof second);
+
+/* 
+    Objects
+    - are used to store many values instead of a singular one.
+    -Need to be denoted with curly brackets {}    
+    -Inside the object, we use key value pairs
+        key: value
+*/
+
+let frodo = {
+    race: 'hobbit',
+    altName: 'The Ring Bearer',
+    rings: '1',
+    cloak: true
+}
+
+/* 
+Arrays
+    - are containers used to hold list of items
+    - need to denote arrays with square brackets []
+    - used commas to separate multiple items
+ */
+
+let list = ['item1', 'item2', 'item3'];
+
+/* 
+    DataType Literals:
+    - A literal represents a fixed value that we as developers insert into the code.
+
+    - Literals Include:
+        - string literals(character wrapped in quotations)
+        - numeric literals (integers)
+        - boolean literals (true/false)
+        - object literals (key/value pairs)
+        - array literals (lists)
+*/
+
+// STRING LITERAL
+let car = 'Ford';
+
+// NUMERIC LITERAL
+let december = 12;
+
+// BOOLEAN LITERAL
+let tired = true;
+//A value of truth or false
+
+// OBJECT LITERAL
+let soups = {
+    a: 'chicken noodle',
+    b: 'tomato',
+    c: 'beef and barley'
+};
+// objects hold what are known as key/value pairs. Our soup object has 3 keys (a, b, c), and each of those keys have their own value tied to it
+
+console.log(soup.c); //beef and barley
+/*
+    - objects use something called dot notation. Dot notation allows us to dig through an object and grab specific data
+    - above we are calling our 'soup' variable and using dot notation to grab the key 'c' that's inside our object. Doing so will return the value associated with the key of 'c' (beef and barley)
+*/
+
+// ARRAY LITERAL
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+console.log(days.toString()); //Monday, Tuesday, Wednesday, Thursday, Friday
+//this is a method that comes built into javascript to help us separate an array into strings
+
+console.log(days.length);
+// this is a property of arrays. Properties are things that already belong to an object
+
+/* 
+    Special Values
+    - Not all math comes out making sense
+    -Infinity
+ */
+
+    let inf = 5/0 ;
+    console.log(inf);
+
+    let notANumber = "string" * 313;
