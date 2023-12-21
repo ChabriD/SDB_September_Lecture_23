@@ -108,14 +108,14 @@ let hulu = {
             title: 'The Best Man',
             genre: rom-com,
             ratings: 4,
-            run time: 130,
+            run_time: 130,
             released: 2-1-1999
         },
         {
             title: 'The Best Man holiday',
             genre: rom-com,
             ratings: 4,
-            run time: 130,
+            run_time: 130,
             released: 2-1-2013
         },
     ]
@@ -126,12 +126,12 @@ let hulu = {
             numSeasons: 3
             seasons: [
                 {
-                    season:
-                    numEpisodes:
+                    season: 1,
+                    numEpisodes: 10,
                     episodes:[
                         {
-                            title:
-                            aired:
+                            title: "the dog",
+                            aired: 1-12-2013
                         }
                     ]
                 }
@@ -141,3 +141,5 @@ let hulu = {
         }
     ]
 }
+
+console.log(hulu.movies);
